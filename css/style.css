@@ -315,22 +315,61 @@ nav {
   color: black;
 }
 
-.social {
+.social-icon {
   display: none;
 }
 
-.nav-scrolled .social {
+.nav-scrolled .social-icon {
   display: inline;
   position: absolute;
-  right: 10px;
+  right: 50px;
 }
 
-.social .nav-item {
+.social-icon .nav-item {
   font-size: 20px;
 }
 
-.social .nav-item a {
+.social-icon .nav-item a {
   color: black;
+}
+
+/*---------------------------------------
+  Social icon             
+-----------------------------------------*/
+
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #454545;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+}
+
+.social-icon li a:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 /*---------------------------------------
@@ -499,50 +538,6 @@ footer {
 footer p {
   padding-bottom: 16px;
 }
-
-
-
-/*---------------------------------------
-  Social icon             
------------------------------------------*/
-
-.social-icon {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.social-icon li {
-  display: inline-block;
-  list-style: none;
-}
-
-.social-icon li a {
-  background: #ffffff;
-  border-radius: 100%;
-  color: #454545;
-  cursor: pointer;
-  font-size: 20px;
-  text-decoration: none;
-  transition: all 0.4s ease-in-out;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-  top: 0;
-  margin: 0px 6px 10px 6px;
-}
-
-.social-icon li a:hover {
-  background: #000000;
-  color: #ffffff;
-  transform: scale(1.1);
-  top: -5px;
-}
-
 
 
 /*---------------------------------------
