@@ -11,7 +11,7 @@
   // navigation Section
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 300) {
+    if (scroll > 80) {
       $("nav").addClass('nav-scrolled');
     } else {
       $("nav").removeClass('nav-scrolled');

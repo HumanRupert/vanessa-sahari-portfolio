@@ -423,9 +423,13 @@ nav {
   padding-top: 100px;
 }
 
+.about-row {
+  display: flex;
+  align-items: center;
+}
+
 .about-image-thumb img {
   border-radius: 5px;
-  margin-bottom: 22px;
 }
 
 .about-image-thumb .social-icon li a {
