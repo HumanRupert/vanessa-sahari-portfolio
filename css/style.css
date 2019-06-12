@@ -9,14 +9,15 @@ http://www.tooplate.com/view/2087-kalay
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
 
 body {
-    background: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    overflow-x: hidden;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -27,7 +28,12 @@ html, body {
   Typorgraphy              
 -----------------------------------------*/
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0px;
@@ -72,7 +78,7 @@ p {
 }
 
 .white-color {
-  color: #f0f0f0;
+  color: white;
 }
 
 
@@ -89,7 +95,7 @@ p {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  padding: 18px 32px;
+  padding: 14px 28px;
   margin-top: 42px;
   text-transform: uppercase;
   -webkit-transition: all ease-in-out 0.4s;
@@ -108,7 +114,7 @@ p {
   General               
 -----------------------------------------*/
 
-html{
+html {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -119,7 +125,9 @@ a {
   text-decoration: none !important;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #000000;
   outline: none;
 }
@@ -145,14 +153,18 @@ a:hover, a:active, a:focus {
   padding-bottom: 32px;
 }
 
-#service, #about, #work,
-#contact, footer {
+#service,
+#about,
+#work,
+#contact,
+footer {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#service, #work {
+#service,
+#work {
   background: #f9f9f9;
   text-align: center;
 }
@@ -199,11 +211,15 @@ a:hover, a:active, a:focus {
 }
 
 @-webkit-@keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 
@@ -213,23 +229,66 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/home-bg.jpg') 50% 0 no-repeat fixed;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
   display: -webkit-flex;
-   display: -ms-flexbox;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-   align-items: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   position: relative;
-  text-align: right;
+  text-align: center;
 }
 
+.home-thumb {
+  display: flex;
+  justify-content: center;
+}
 
+.hire-btn {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*---------------------------------------
+  Navbar section              
+-----------------------------------------*/
+
+nav {
+  background: transparent;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#logo {
+  height: 40%;
+  margin-left: 75px;
+}
+
+.navbar-nav {
+  padding-left: 20px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  font-size: 17px;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+}
 
 /*---------------------------------------
   Service section              
