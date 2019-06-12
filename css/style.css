@@ -258,12 +258,14 @@ footer {
 nav {
   background: transparent;
   height: 15vh;
+  width: 100%;
   position: absolute;
   top: 0;
   z-index: 10;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  position: fixed;
 }
 
 #logo {
@@ -284,6 +286,51 @@ nav {
 
 .nav-link {
   color: white;
+}
+
+
+/* Navbar on scroll */
+.nav-scrolled {
+  background: white;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-scrolled #logo {
+  height: 70%;
+}
+
+.nav-scrolled .nav-item {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+
+.nav-scrolled .navbar-nav {
+  margin-left: -60px;
+}
+
+.nav-scrolled .nav-link {
+  color: black;
+}
+
+.social {
+  display: none;
+}
+
+.nav-scrolled .social {
+  display: inline;
+  position: absolute;
+  right: 10px;
+}
+
+.social .nav-item {
+  font-size: 20px;
+}
+
+.social .nav-item a {
+  color: black;
 }
 
 /*---------------------------------------
