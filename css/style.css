@@ -135,28 +135,24 @@ a:focus {
   box-sizing: border-box;
 }
 
-.skills-section {
-  background-attachment: fixed !important;
-  background-size: cover !important;
-}
-
 .section-title {
   margin: 0;
   padding-bottom: 32px;
+  text-align: center;
 }
 
-#service,
+#skills,
 #about,
-#work,
-#contact,
+#hire,
+#portfolio,
 footer {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#service,
-#work {
+#skills,
+#hire {
   background: #f9f9f9;
   text-align: center;
 }
@@ -423,38 +419,40 @@ footer {
 }
 
 /*---------------------------------------
-  Service section              
+  Skills section              
 -----------------------------------------*/
 
-#skills {}
-
-.service-thumb {
+.skill-thumb {
   background: #ffffff;
   border-radius: 5px;
   padding: 42px 22px;
-  cursor: crosshair;
+  cursor: pointer;
   position: relative;
   top: 0;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
 
-.service-thumb:hover {
-  background: #2b2b2b;
+.skill-thumb:hover {
+  background: #FFA8D4;
   top: -5px;
 }
 
-.service-thumb:hover .fa,
-.service-thumb:hover h4 {
+.skill-thumb:hover p {
+  color: white;
+}
+
+.skill-thumb:hover .fa,
+.skill-thumb:hover h4 {
   color: #ffffff;
 }
 
-.service-thumb h4 {
+.skill-thumb h4 {
   padding-bottom: 5px;
 }
 
-.service-thumb .fa {
-  color: #7682cc;
+.skill-thumb .fa {
+  color: #A3FFA3;
   font-size: 62px;
   text-align: center;
   margin-top: 32px;
@@ -499,10 +497,10 @@ footer {
 
 
 /*---------------------------------------
-  Work section              
+  project section              
 -----------------------------------------*/
 
-.work-thumb {
+.project-thumb {
   margin: 22px 0 12px 0;
   padding: 0;
   overflow: hidden;
@@ -510,19 +508,19 @@ footer {
   text-align: left;
 }
 
-.work-thumb img {
+.project-thumb img {
   border-radius: 5px;
 }
 
-.work-thumb h2 {
+.project-thumb h2 {
   font-size: 25px;
 }
 
-.work-thumb-overlay {
+.project-thumb-overlay {
   position: absolute;
-  background: #7682cc;
+  background: #A3FFA3;
   border-radius: 5px;
-  cursor: crosshair;
+  cursor: pointer;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -531,8 +529,14 @@ footer {
   transition: all ease-in-out 0.4s;
 }
 
-.work-thumb:hover .work-thumb-overlay {
+.project-thumb:hover .project-thumb-overlay {
   opacity: 1;
+}
+
+.project {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 
@@ -605,7 +609,7 @@ footer p {
     height: 55vh;
   }
 
-  .service-thumb {
+  .skill-thumb {
     margin-top: 12px;
     margin-bottom: 22px;
   }
