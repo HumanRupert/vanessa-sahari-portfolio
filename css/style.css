@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400");
 
 body {
   background: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   overflow-x: hidden;
@@ -16,10 +16,8 @@ body {
 }
 
 .active-scroll {
-  color: #FE5BAC !important;
+  color: #fe5bac !important;
 }
-
-
 
 /*---------------------------------------
   Typorgraphy              
@@ -74,7 +72,6 @@ p {
   background: #2b2b2b !important;
 }
 
-
 /*---------------------------------------
   Buttons               
 -----------------------------------------*/
@@ -101,7 +98,7 @@ p {
 }
 
 .form-btn {
-  background-color: #FE5BAC;
+  background-color: #fe5bac;
   color: white;
   transition: 0.3s;
   border: 0;
@@ -110,10 +107,6 @@ p {
 .form-btn:hover {
   background-color: rgb(253, 115, 184);
 }
-
-
-
-
 
 /*---------------------------------------
   General               
@@ -170,7 +163,6 @@ footer {
   text-align: center;
 }
 
-
 /*---------------------------------------
   Pre loader section              
 -----------------------------------------*/
@@ -196,7 +188,7 @@ footer {
 }
 
 .spinner:before {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   top: 50%;
@@ -208,7 +200,7 @@ footer {
   border-radius: 50%;
   border: 2px solid #454545;
   border-top-color: #ffffff;
-  animation: spinner .9s linear infinite;
+  animation: spinner 0.9s linear infinite;
 }
 
 @-webkit-@keyframes spinner {
@@ -223,14 +215,12 @@ footer {
   }
 }
 
-
-
 /*---------------------------------------
   Home section              
 -----------------------------------------*/
 
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 no-repeat fixed;
+  background: url("../images/home-bg.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -271,7 +261,6 @@ footer {
   bottom: 30px;
 }
 
-
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -279,7 +268,6 @@ footer {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -341,7 +329,6 @@ footer {
   color: white;
 }
 
-
 /* Navbar on scroll */
 .nav-scrolled {
   background: white;
@@ -363,7 +350,6 @@ footer {
   font-size: 15px;
   font-weight: normal;
 }
-
 
 .nav-scrolled .navbar-nav {
   margin-left: -60px;
@@ -426,7 +412,7 @@ footer {
 }
 
 .social-icon li a:hover {
-  background: #FE5BAC;
+  background: #fe5bac;
   color: #ffffff;
   transform: scale(1.1);
 }
@@ -447,7 +433,7 @@ footer {
 }
 
 .skill-thumb:hover {
-  background: #FFA8D4;
+  background: #ffa8d4;
   top: -5px;
 }
 
@@ -465,7 +451,7 @@ footer {
 }
 
 .skill-thumb .fa {
-  color: #A3FFA3;
+  color: #a3ffa3;
   font-size: 62px;
   text-align: center;
   margin-top: 32px;
@@ -475,8 +461,6 @@ footer {
 .bg-grey .fa {
   color: #ffffff;
 }
-
-
 
 /*---------------------------------------
   About section              
@@ -507,8 +491,6 @@ footer {
   padding: 2px 0;
 }
 
-
-
 /*---------------------------------------
   project section              
 -----------------------------------------*/
@@ -531,7 +513,7 @@ footer {
 
 .project-thumb-overlay {
   position: absolute;
-  background: #A3FFA3;
+  background: #a3ffa3;
   border-radius: 5px;
   cursor: pointer;
   opacity: 0;
@@ -553,7 +535,6 @@ footer {
   object-position: top;
 }
 
-
 /*---------------------------------------
   Contact section              
 -----------------------------------------*/
@@ -566,7 +547,7 @@ footer {
 }
 
 .contact-icon {
-  color: #FE5BAC;
+  color: #fe5bac;
 }
 
 .contact-info .fa {
@@ -592,17 +573,27 @@ input {
 input:focus,
 textarea:focus,
 select:focus {
+  /*
   box-shadow: 0 3px 7px #A3FFA3 !important;
-  border-bottom-color: #A3FFA3 !important;
+  */
+  box-shadow: 0 0 0 !important;
+  border-bottom-color: #a3ffa3 !important;
 }
 
+hr {
+  width: 100%;
+  margin: 30px 0;
+  height: 0.7px;
+  background: #a3ffa3;
+  display: none;
+}
 
 /*---------------------------------------
   Footer section              
 -----------------------------------------*/
 
 footer {
-  background: #A3FFA3;
+  background: #a3ffa3;
   text-align: center;
   padding: 40px 0;
 }
@@ -627,16 +618,11 @@ footer p {
   line-height: 22px;
 }
 
-
 /*---------------------------------------
   Mobile Responsive styles              
 -----------------------------------------*/
 
 @media (max-width: 980px) {
-  #home {
-    height: 55vh;
-  }
-
   .skill-thumb {
     margin-top: 12px;
     margin-bottom: 22px;
@@ -647,16 +633,36 @@ footer p {
   }
 }
 
-
 @media (max-width: 768px) {
-  #home {
-    height: 85vh;
+  .navbar-nav {
+    display: flex;
+  }
+  .nav-scrolled .navbar-nav {
+    margin-left: -120px;
   }
 }
 
+@media (max-width: 700px) {
+  #logo {
+    margin-left: 40px;
+    height: 30%;
+    margin-right: 10px;
+  }
+  .nav-scrolled .navbar-nav {
+    margin-left: -130px;
+  }
+  .social-icon li a {
+    font-size: 14px;
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  .nav-scrolled #logo {
+    height: 60%;
+  }
+}
 
 @media (max-width: 580px) {
-
   h1 {
     font-size: 29px;
   }
@@ -665,18 +671,10 @@ footer p {
     font-size: 23px;
   }
 
-  #home {
-    height: 95vh;
-  }
-
   .contact-info {
     margin-top: 42px;
   }
 }
 
-
 @media (max-width: 320px) {
-  #home {
-    height: 125vh;
-  }
 }
