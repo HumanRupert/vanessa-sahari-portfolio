@@ -585,25 +585,9 @@ footer {
   transition: all ease-in-out 0.4s;
 }
 
-
-#contact input {
+input {
   height: 55px;
 }
-
-#contact button#submit {
-  background: #2b2b2b;
-  border: none;
-  border-radius: 50px;
-  color: #ffffff;
-  height: 50px;
-  margin-top: 24px;
-}
-
-#contact button#submit:hover {
-  background: #7682cc;
-  color: #ffffff;
-}
-
 
 
 /*---------------------------------------
