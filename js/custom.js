@@ -7,14 +7,25 @@
     $('.preloader').fadeOut(800); // set duration in brackets    
   });
 
+  // SCROLLSPY
+  $(function () {
+    $('#scrollspy').navpoints();
+  });
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 250) {
+      $(".nav-link").removeClass('active');
+    }
+  })
+
 
   // navigation Section
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 80) {
-      $("nav").addClass('nav-scrolled');
+      $(".navigation").addClass('nav-scrolled');
     } else {
-      $("nav").removeClass('nav-scrolled');
+      $(".navigation").removeClass('nav-scrolled');
     }
   })
 
