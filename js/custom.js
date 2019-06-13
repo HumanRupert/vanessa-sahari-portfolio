@@ -9,12 +9,14 @@
 
   // SCROLLSPY
   $(function () {
-    $('#scrollspy').navpoints();
+    $('#scrollspy').navpoints({
+      currentClass: 'active-scroll'
+    });
   });
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll < 250) {
-      $(".nav-link").removeClass('active');
+      $(".nav-link").removeClass('active-scroll');
     }
   })
 
