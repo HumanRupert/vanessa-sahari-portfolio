@@ -100,6 +100,19 @@ p {
   color: #000000;
 }
 
+.form-btn {
+  background-color: #FE5BAC;
+  color: white;
+  transition: 0.3s;
+  border: 0;
+}
+
+.form-btn:hover {
+  background-color: rgb(253, 115, 184);
+}
+
+
+
 
 
 /*---------------------------------------
@@ -111,7 +124,7 @@ html {
 }
 
 a {
-  color: #757557;
+  color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
@@ -545,25 +558,33 @@ footer {
   Contact section              
 -----------------------------------------*/
 
+#hire-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  color: #FE5BAC;
+}
+
 .contact-info .fa {
   padding-right: 5px;
 }
 
-#contact .form-control {
+.form-control {
   border: none;
   border-bottom: 2px solid #f0f0f0;
   border-radius: 0px;
   box-shadow: none;
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
 
-#contact .form-control:focus {
-  border-bottom-color: #999999;
-}
 
 #contact input {
   height: 55px;
@@ -590,13 +611,29 @@ footer {
 -----------------------------------------*/
 
 footer {
-  background: #7682cc;
+  background: #A3FFA3;
   text-align: center;
-  padding: 120px 0;
+  padding: 40px 0;
 }
 
 footer p {
   padding-bottom: 16px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-thumb a {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.footer-thumb p {
+  font-size: 14px;
+  line-height: 22px;
 }
 
 

@@ -42,7 +42,7 @@
           <a href="">
                <img src="../images/untitled-1.png" alt="" id='logo'>
           </a>
-          <nav id="scrollspy" >
+          <nav id="scrollspy">
                <ul class="navbar-nav">
                     <li class="nav-item">
                          <a class="nav-link" href="#about">About Me</a>
@@ -84,7 +84,8 @@
                                    nisl, nec finibus urna posuere nec. Quisque vel nunc eget arcu maximus facilisis
                                    non
                                    eu nisi. Aliquam ullamcorper est a nisl imperdiet luctus.</p>
-                              <a href="#hire" class="wow fadeInUp smoothScroll btn btn-default section-btn hire-btn"
+                              <a href="#contact-target"
+                                   class="wow fadeInUp smoothScroll btn btn-default section-btn hire-btn"
                                    data-wow-delay="1s">Hire Me</a>
                          </div>
                     </div>
@@ -245,35 +246,48 @@
 
      <!-- CONTACT SECTION -->
      <section id="hire" class="parallax-section">
-          <div class="container">
-               <div class="row">
+          <div class="container" id='contact-target'>
+               <div class="row" id='hire-sect'>
 
                     <div class="col-md-12 col-sm-12">
                          <!-- SECTION TITLE -->
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                              <h2>Get in touch</h2>
+                              <h2>Hire Me</h2>
                               <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
                          </div>
                     </div>
-
                     <div class="col-md-7 col-sm-10">
-                         <!-- CONTACT FORM HERE -->
                          <div class="wow fadeInUp" data-wow-delay="0.4s">
                               <form id="contact-form" action="#" method="get">
-                                   <div class="col-md-6 col-sm-6">
-                                        <input type="text" class="form-control" name="name" placeholder="Name"
+                                   <div class="col-md-6 col-sm-6 form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name"
                                              required="">
                                    </div>
-                                   <div class="col-md-6 col-sm-6">
-                                        <input type="email" class="form-control" name="email" placeholder="Email"
-                                             required="">
+                                   <div class="col-md-6 col-sm-6 form-group">
+                                        <input type="email" class="form-control" name="email"
+                                             placeholder="Your Company's Name" required="">
                                    </div>
-                                   <div class="col-md-12 col-sm-12">
+                                   <div class="col-md-6 col-sm-6 form-group">
+                                        <input type="email" class="form-control" name="email"
+                                             placeholder="Your Email Address" required="">
+                                   </div>
+                                   <div class="col-md-6 col-sm-6 form-group">
+                                        <select class="form-control" id="sel1">
+                                             <option disabled selected>Your Project Type</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-12 col-sm-12 form-group">
                                         <textarea class="form-control" rows="5" name="message" placeholder="Message"
                                              required=""></textarea>
                                    </div>
+
                                    <div class="col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6">
-                                        <button id="submit" type="submit" class="form-control" name="submit">Send
+                                        <button id="submit" type="submit" class="form-control form-btn"
+                                             name="submit">Send
                                              Message</button>
                                    </div>
                               </form>
@@ -290,35 +304,44 @@
                                         adipisicing lacinia tortor morbi ultricies.</p>
                               </div>
 
-                              <p><i class="fa fa-map-marker"></i> 456 New Street 22000, New York City, USA</p>
-                              <p><i class="fa fa-comment"></i> <a href="mailto:info@company.com">info@company.com</a>
+                              <p><i class="fa fa-map-marker contact-icon"></i> 456 New Street 22000, New York City, USA
                               </p>
-                              <p><i class="fa fa-phone"></i> 010-020-0340</p>
+                              <p><i class="fa fa-comment contact-icon"></i> <a href="mailto:info@company.com"
+                                        style='color: black;'>info@company.com</a>
+                              </p>
+                              <p><i class="fa fa-phone contact-icon"></i> 010-020-0340</p>
                          </div>
                     </div>
-
                </div>
           </div>
+
      </section>
 
 
      <!-- FOOTER SECTION -->
      <footer>
           <div class="container">
-               <div class="row">
+               <div class="row footer-row">
+                    <div class="col-md-3 footer-thumb">
+                         <h3>Lorem Ipsum</h3>
+                         <a href="#">Project #1</a>
+                         <a href="#">Project #1</a>
+                         <a href="#">Project #1</a>
 
-                    <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.8s">
-                         <p class="white-color"></p>
-                         <div class="wow fadeInUp" data-wow-delay="1s">
-                              <ul class="social-icon">
-                                   <li><a href="#" class="fa fa-facebook"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
-                                   <li><a href="#" class="fa fa-behance"></a></li>
-                                   <li><a href="#" class="fa fa-github"></a></li>
-                              </ul>
-                         </div>
                     </div>
+                    <div class="col-md-3 footer-thumb">
+                         <h3>Lorem Ipsum</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum sint ab dolorem aut
+                              praesentium voluptate quam facilis reiciendis vero?
+                         </p>
+                    </div>
+                    <div class="col-md-3 footer-thumb">
+                         <h3>Lorem Ipsum</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum sint ab dolorem aut
+                              praesentium voluptate quam facilis reiciendis vero?
+                         </p>
+                    </div>
+
                </div>
      </footer>
 
