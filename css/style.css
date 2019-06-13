@@ -640,6 +640,12 @@ footer p {
   .nav-scrolled .navbar-nav {
     margin-left: -120px;
   }
+
+  .header-text {
+    width: 80%;
+    color: white;
+    margin: auto;
+  }
 }
 
 @media (max-width: 700px) {
