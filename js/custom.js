@@ -2,17 +2,28 @@
 
   "use strict";
 
+
+  $('.ajax-popup-link').magnificPopup({
+    type: 'ajax'
+  });
+
+
+
   // PRE LOADER
   $(window).load(function () {
     $('.preloader').fadeOut(800); // set duration in brackets    
   });
 
   // SCROLLSPY
-  $(function () {
-    $('#scrollspy').navpoints({
-      currentClass: 'active-scroll'
+  if ($(window).width() >= 768) {
+    $(function () {
+      $('#scrollspy').navpoints({
+        currentClass: 'active-scroll'
+      });
     });
-  });
+
+  }
+
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll < 250) {
