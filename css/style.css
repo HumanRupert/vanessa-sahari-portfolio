@@ -463,8 +463,10 @@ footer {
   margin-bottom: 22px;
 }
 
-.bg-grey .fa {
-  color: #ffffff;
+.skills-section .section-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /*---------------------------------------
@@ -665,6 +667,7 @@ footer p {
   .about-image-thumb {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .about-image-thumb img {
@@ -763,6 +766,42 @@ footer p {
 
   .nav-scrolled .get-in-touch {
     display: inline-block !important;
+  }
+
+  .about-thumb {
+    padding-top: 20px;
+  }
+
+  .mini-social-icon {
+    position: relative;
+    display: block !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .mini-social-icon li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .mini-social-icon li a {
+    background: #ffffff;
+    border-radius: 100%;
+    color: #454545;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 35px;
+    height: 35px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    margin: 0px 6px 10px 6px;
   }
 }
 
