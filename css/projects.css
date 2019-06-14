@@ -1,5 +1,72 @@
+.container {
+    background: white;
+    height: 90vh;
+    width: 100vw;
+}
+
 .preview-img {
-    position: absolute;
-    top: 10px;
-    left: 0;
+    height: 50vh;
+    padding: 0 !important;
+}
+
+.project-thumb {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 20px !important;
+    font-weight: lighter !important;
+}
+
+.auth-img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.author p {
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.stats {
+    height: 35px;
+}
+
+.stats i {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.buttons i {
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.other-projects {
+    height: 10vh;
+}
+
+.other-project {
+    box-shadow: 0 4px 4px rgba(105, 101, 101, 0.5);
+    border-radius: 10px;
+}
+
+.other-projects img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.project-text {
+    padding: 10px;
+}
+
+.project-text p {
+    font-size: 13px;
+    line-height: 15px;
 }

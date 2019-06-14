@@ -7,32 +7,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 1</title>
 
-
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/imagelightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container preview-img">
-        <div class="row">
-            <a href="../images/project-image1.jpg" data-imagelightbox="demo" data-ilb2-caption="Caption 1"
-                class="col-3">
-                <img src="../images/profile-image.jpg" class="img-responsive img-fluid">
-            </a>
+    <div class="container">
+        <div class="row d-flex justify-content-between flex-wrap">
+            <div class="preview-img col-8 d-flex justify-content-around mt-5">
+                <a href="../images/projects-images/project11.jpg" data-imagelightbox="demo"
+                    data-ilb2-caption="Caption 1" class="col-4">
+                    <img src="../images/projects-images/project11.jpg" class="img-responsive project-thumb">
+                </a>
 
-            <a href="../images/project-image3.jpg" data-imagelightbox="demo" data-ilb2-caption="Caption 2"
-                class="col-3">
-                <img src="../images/profile-image.jpg" class="img-responsive img-fluid">
-            </a>
+                <a href="../images/projects-images/project12.jpg" data-imagelightbox="demo"
+                    data-ilb2-caption="Caption 2" class="col-4">
+                    <img src="../images/projects-images/project12.jpg" class="img-responsive project-thumb">
+                </a>
 
-            <a href="../images/project-image2.jpg" data-imagelightbox="demo" data-ilb2-caption="Caption 3"
-                class="col-3">
-                <img src="../images/profile-image.jpg" class="img-responsive img-fluid">
-            </a>
+                <a href="../images/projects-images/project13.jpg" data-imagelightbox="demo"
+                    data-ilb2-caption="Caption 3" class="col-4">
+                    <img src="../images/projects-images/project13.jpg" class="img-responsive project-thumb">
+                </a>
+            </div>
+            <div class="other-projects col-4 d-flex justify-content-center flex-wrap mt-5">
+                <h2>Other Projects</h2>
+                <div class="other-project mt-3 d-flex justify-content-start">
+                    <img src="../images/projects-images/project21.jpg" alt="" class="img-responsive mr-3">
+                    <div class="project-text">
+                        <h3>Project #2</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="other-project mt-3 d-flex justify-content-start">
+                    <img src="../images/projects-images/project31.jpg" alt="" class="img-responsive mr-3">
+                    <div class="project-text">
+                        <h3>Project #3</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="other-project mt-3 d-flex justify-content-start">
+                    <img src="../images/projects-images/project41.jpg" alt="" class="img-responsive mr-3">
+                    <div class="project-text">
+                        <h3>Project #4</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="other-project mt-3 d-flex justify-content-start">
+                    <img src="../images/projects-images/project51.jpg" alt="" class="img-responsive mr-3">
+                    <div class="project-text">
+                        <h3>Project #5</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="other-project mt-3 d-flex justify-content-start">
+                    <img src="../images/projects-images/project61.jpg" alt="" class="img-responsive mr-3">
+                    <div class="project-text">
+                        <h3>Project #6</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="project-txt col-8 mt-3 ml-3 d-flex flex-wrap align-items-center">
+                <h2 class="mt-3 col-6">Project #1</h2>
+                <div class="buttons col-6 d-flex justify-content-end">
+                    <i class="fa fa-plus" aria-hidden="true">Add To</i>
+                    <i class="fa fa-share" aria-hidden="true">Share</i>
+                    <i class="fa fa-download" aria-hidden="true">Download</i>
+                </div>
+                <h3 class="col-12">3D Design</h3>
+
+                <div class="author mt-4 col-6">
+                    <img src="https://hubstaff-talent.s3.amazonaws.com/avatars/c14cca501cde977458ce05611db7b7d9" alt=""
+                        class="auth-img img-responsive">
+                    <p>By Sepehr Sahari</p>
+                </div>
+                <div class="stats col-6 d-flex justify-content-end align-items-end">
+                    <i class="fa fa-eye">66</i>
+                    <i class="fa fa-thumbs-up" aria-hidden="true">10</i>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
 
@@ -50,6 +110,7 @@
             arrows: true,
             button: true,
             navigation: true,
+            overlay: true,
         });
     </script>
 
