@@ -378,6 +378,10 @@ footer {
   color: black;
 }
 
+.get-in-touch {
+  display: none !important;
+}
+
 /*---------------------------------------
   Social icon             
 -----------------------------------------*/
@@ -676,6 +680,18 @@ footer p {
   .footer-thumb span {
     display: none;
   }
+
+  .skills-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 700px) {
@@ -718,6 +734,41 @@ footer p {
   .contact-info {
     margin-top: 42px;
   }
+
+  .nav-scrolled .social-icon {
+    display: none;
+  }
+
+  #logo {
+    height: 25%;
+    margin-bottom: 19px;
+    margin-left: 20px;
+  }
+
+  .navbar-nav li a {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    margin-right: 14px;
+  }
+
+  .navigation {
+    height: 13vh;
+  }
+
+  .nav-scrolled {
+    height: 10vh;
+  }
+
+  .nav-scrolled .get-in-touch {
+    display: inline-block !important;
+  }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 450px) {
+  .nav-scrolled .get-in-touch {
+    display: none !important;
+  }
+
+}
