@@ -2,6 +2,14 @@ body {
   overflow: hidden;
 }
 
+.container {
+  margin: 0;
+}
+
+.row {
+  width: 100vw;
+}
+
 /*---------------------------------------
   Navbar             
 -----------------------------------------*/
@@ -43,11 +51,13 @@ body {
   Image Box             
 -----------------------------------------*/
 .image-container {
-  height: 90vh;
+  height: 100vh;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* background: rgb(0, 0, 0, .1);
+  border-right: 1.5px solid #a3ffa3; */
 }
 
 .image-container img {
@@ -55,21 +65,21 @@ body {
 }
 
 .image-container::-webkit-scrollbar {
-  width: 0px;
+  width: 3px;
 }
 
 .image-container::-webkit-scrollbar-track {
-  display: none;
+  background: #f3a9ce;
 }
 
 .image-container::-webkit-scrollbar-thumb {
-  display: none;
+  background: #a3ffa3;
 }
 
 .image-container i {
   position: absolute;
   z-index: 5;
-  bottom: 10px;
+  bottom: 10vh;
   color: rgba(255, 255, 255, 0.664);
   font-size: 25px;
 }
@@ -98,3 +108,63 @@ body {
     transform: translateY(-7px);
   }
 }
+
+/*---------------------------------------
+  Author box             
+-----------------------------------------*/
+
+
+.img-auth {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.author h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.buttons a {
+  font-size: 12px;
+}
+
+.btn-primary {
+  background-color: black;
+  border: 0px;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  background-color: #fe5bac;
+}
+
+hr {
+  width: 70%;
+}
+
+/*---------------------------------------
+  Project Details            
+-----------------------------------------*/
+
+.project-details p {
+  font-size: 15px;
+}
+
+.project-details a {
+  color: black;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  transition: .3s;
+}
+
+.project-details a:hover {
+  color: #fe5bac;
+}
+
+/*---------------------------------------
+  Buttons            
+-----------------------------------------*/
