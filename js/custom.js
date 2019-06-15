@@ -4,7 +4,7 @@
 
 
   $('.ajax-popup-link').magnificPopup({
-    type: 'ajax'
+    type: 'ajax',
   });
 
 

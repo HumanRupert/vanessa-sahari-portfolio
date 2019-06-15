@@ -6,6 +6,12 @@ body {
   margin: 0;
 }
 
+#god-div {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
 .row {
   width: 100vw;
 }
@@ -53,15 +59,16 @@ body {
 .image-container {
   height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background: rgb(0, 0, 0, .1);
-  border-right: 1.5px solid #a3ffa3; */
 }
 
 .image-container img {
-  height: 100%;
+  height: 80%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .image-container::-webkit-scrollbar {
@@ -110,6 +117,13 @@ body {
 }
 
 /*---------------------------------------
+  Project Details            
+-----------------------------------------*/
+.right-menu {
+  overflow-y: scroll;
+}
+
+/*---------------------------------------
   Author box             
 -----------------------------------------*/
 
@@ -126,19 +140,6 @@ body {
   margin-bottom: 0;
 }
 
-.buttons a {
-  font-size: 12px;
-}
-
-.btn-primary {
-  background-color: black;
-  border: 0px;
-  transition: .3s;
-}
-
-.btn-primary:hover {
-  background-color: #fe5bac;
-}
 
 hr {
   width: 70%;
@@ -147,6 +148,7 @@ hr {
 /*---------------------------------------
   Project Details            
 -----------------------------------------*/
+
 
 .project-details p {
   font-size: 15px;
@@ -206,3 +208,54 @@ hr {
 .btn-next {
   right: 10px;
 }
+
+.buttons a {
+  font-size: 12px;
+}
+
+.btn-primary {
+  background-color: black;
+  border: 0px;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  background-color: #fe5bac;
+}
+
+
+/*---------------------------------------
+  Media Query            
+-----------------------------------------*/
+
+/* --- lg ---*/
+@media (min-width: 1200px) {
+  .project-details p {
+    font-size: 20px;
+  }
+
+  .buttons a {
+    font-size: 17px;
+  }
+
+  .image-container a {
+    font-size: 40px;
+    margin: 20px;
+  }
+}
+
+/* --- md ---*/
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .image-container img:nth-of-type(2),
+  .image-container img:nth-of-type(3) {
+    margin-top: -180px;
+  }
+
+  /* --- sm ---*/
+
+
+
+  /* --- xs ---*/
