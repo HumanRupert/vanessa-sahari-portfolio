@@ -30,7 +30,7 @@
 
 .nav-link {
   color: white !important;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .nav-link:hover,
@@ -42,7 +42,7 @@
   margin-right: 15px;
   font-size: 20px;
   color: white;
-  transition: .2s;
+  transition: 0.2s;
   text-decoration: none;
 }
 
@@ -58,10 +58,14 @@
   justify-content: center;
 }
 
+.image-container img:first-of-type {
+  margin-top: 10vh;
+}
 .image-container img {
-  height: 80%;
-  max-width: 100%;
-  object-fit: contain;
+  margin-bottom: 50px;
+  height: 50%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .image-container::-webkit-scrollbar {
@@ -91,7 +95,6 @@
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -116,16 +119,12 @@
 @media (min-width: 992px) {
   .right-menu {
     margin-top: 10vh;
-    max-height: 100vh;
-    overflow-y: scroll;
   }
-
 }
 
 /*---------------------------------------
   Author box             
 -----------------------------------------*/
-
 
 .img-auth {
   width: 50px;
@@ -139,7 +138,6 @@
   margin-bottom: 0;
 }
 
-
 hr {
   width: 70%;
 }
@@ -147,7 +145,6 @@ hr {
 /*---------------------------------------
   Project Details            
 -----------------------------------------*/
-
 
 .project-details p {
   font-size: 15px;
@@ -159,7 +156,7 @@ hr {
   width: 35px;
   height: 35px;
   font-size: 25px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .project-details a:hover {
@@ -177,13 +174,12 @@ hr {
   color: rgb(204, 17, 17);
   text-decoration: none;
   font-size: 25px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn-close:hover {
   color: rgb(204, 17, 17);
   text-decoration: none;
-
 }
 
 .image-container a {
@@ -191,7 +187,7 @@ hr {
   top: 40%;
   font-size: 30px;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
   color: black;
 }
 
@@ -200,7 +196,6 @@ hr {
   color: #a3ffa3;
 }
 
-
 .buttons a {
   font-size: 12px;
 }
@@ -208,13 +203,12 @@ hr {
 .btn-primary {
   background-color: black;
   border: 0px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #fe5bac;
 }
-
 
 /*---------------------------------------
   Media Query            
@@ -249,20 +243,13 @@ hr {
     overflow-y: scroll;
     overflow-x: hidden;
   }
-
 }
 
 /* --- md ---*/
 
-@media (max-width:992px) {
-
+@media (max-width: 992px) {
   .btn-down {
     display: none !important;
-  }
-
-  .image-container img:nth-of-type(2),
-  .image-container img:nth-of-type(3) {
-    margin-top: -100px;
   }
 
   .right-menu {
@@ -273,28 +260,24 @@ hr {
     position: fixed;
     padding-top: 30px;
   }
-
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) {
+  .image-container img:nth-of-type(2),
+  .image-container img:nth-of-type(3) {
+  }
+}
 
+/* --- sm ---*/
+
+@media (min-width: 768px) and (max-width: 992px) {
   .image-container img:nth-of-type(2),
   .image-container img:nth-of-type(3) {
     margin-top: -180px;
   }
+}
 
-  /* --- sm ---*/
+@media (max-width: 992px) {
+}
 
-  @media (min-width: 768px) and (max-width: 992px) {
-
-    .image-container img:nth-of-type(2),
-    .image-container img:nth-of-type(3) {
-      margin-top: -180px;
-    }
-
-  }
-
-  @media (max-width: 992px) {}
-
-
-  /* --- xs ---*/
+/* --- xs ---*/
