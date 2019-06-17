@@ -1,15 +1,5 @@
-body {
-  overflow: hidden;
-}
-
 .container {
   margin: 0;
-}
-
-#god-div {
-  background: white;
-  width: 100%;
-  height: 100%;
 }
 
 .row {
@@ -21,9 +11,12 @@ body {
 -----------------------------------------*/
 .navbar {
   height: 7vh;
+  width: 100vw;
   border-bottom-width: 1.5px !important;
   border-bottom-style: solid;
   border-color: #fe5bac;
+  position: fixed;
+  z-index: 5;
 }
 
 .logo {
@@ -75,7 +68,7 @@ body {
   width: 3px;
 }
 
-.image-container::-webkit-scrollbar-track {
+.rightmen::-webkit-scrollbar-track {
   background: #f3a9ce;
 }
 
@@ -119,8 +112,14 @@ body {
 /*---------------------------------------
   Project Details            
 -----------------------------------------*/
-.right-menu {
-  overflow-y: scroll;
+
+@media (min-width: 992px) {
+  .right-menu {
+    margin-top: 10vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
 }
 
 /*---------------------------------------
@@ -201,13 +200,6 @@ hr {
   color: #a3ffa3;
 }
 
-.btn-prev {
-  left: 10px;
-}
-
-.btn-next {
-  right: 10px;
-}
 
 .buttons a {
   font-size: 12px;
@@ -229,6 +221,15 @@ hr {
 -----------------------------------------*/
 
 /* --- lg ---*/
+@media (min-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+  .right-menu {
+    overflow-y: scroll !important;
+  }
+}
+
 @media (min-width: 1200px) {
   .project-details p {
     font-size: 20px;
@@ -242,10 +243,38 @@ hr {
     font-size: 40px;
     margin: 20px;
   }
+
+  .image-container {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
 }
 
 /* --- md ---*/
 
+@media (max-width:992px) {
+
+  .btn-down {
+    display: none !important;
+  }
+
+  .image-container img:nth-of-type(2),
+  .image-container img:nth-of-type(3) {
+    margin-top: -100px;
+  }
+
+  .right-menu {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    height: 30vh;
+    position: fixed;
+    padding-top: 30px;
+  }
+
+}
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
@@ -256,6 +285,16 @@ hr {
 
   /* --- sm ---*/
 
+  @media (min-width: 768px) and (max-width: 992px) {
+
+    .image-container img:nth-of-type(2),
+    .image-container img:nth-of-type(3) {
+      margin-top: -180px;
+    }
+
+  }
+
+  @media (max-width: 992px) {}
 
 
   /* --- xs ---*/
