@@ -2,6 +2,9 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden !important;
+}
 .row {
   width: 100vw;
 }
@@ -21,7 +24,7 @@
 
 .logo {
   width: 60%;
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .navbar {
@@ -263,8 +266,28 @@ hr {
   }
   .buttons a {
     font-size: 15px;
+  }
+  .navbar-brand {
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+  .collapse {
+    background-color: #f3a9ce;
+  }
+  .social-icon {
+    display: none;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
 }
 
 /* --- sm ---*/
+@media (max-width: 768px) {
+  .project-details a {
+    display: none;
+  }
+}
 
 /* --- xs ---*/
