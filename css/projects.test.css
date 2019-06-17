@@ -291,3 +291,13 @@ hr {
 }
 
 /* --- xs ---*/
+@media (max-width: 400px) {
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+  .navbar-toggler {
+    width: 50px;
+    height: 30px;
+  }
+}
