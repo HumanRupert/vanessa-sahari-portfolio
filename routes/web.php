@@ -17,6 +17,7 @@ Route::get('/', function () {
 Route::get('/project/{id}', function ($id) {return view('project'.$id);});
 
 Route::resource('projects', 'ProjectsController');
+Route::resource('contact', 'ContactFormController');
 
 
 Auth::routes();

@@ -13,7 +13,7 @@ class ProjectsController extends Controller
     /** Authenticate users */
      public function __construct()
     {
-        $this->middleware('auth', ['except' => 'show']);
+        $this->middleware('auth', ['except' => 'view']);
     }
 
     /**

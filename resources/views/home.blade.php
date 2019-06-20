@@ -227,6 +227,7 @@
                          <div class="project-thumb">
                               <!-- <a href="images/project-image2.jpg" class="image-popup"> -->
                               <a href="/projects/2">
+
                                    <div class="project-thumb-overlay">
                                         <h4 class="white-color">First Title</h4>
                                         <h2>3D Design</h2>
@@ -307,39 +308,31 @@
                     </div>
                     <div class="col-md-7 col-xs-10">
                          <div class="wow fadeInUp" data-wow-delay="0.4s">
-                              <form id="contact-form" action="#" method="get">
+                              {{ Form::open(['action' => 'ContactFormController@store', 'method' => 'POST'], ['class'=>'form-control']) }}
                                    <div class="col-md-6 col-sm-6 form-group">
-                                        <input type="text" class="form-control" name="name" placeholder="Your Name"
-                                             required="">
+                                        {{Form::text('name', '', ['class'=>'form-control', 'placeholder'=>'Your Name Here'])}}
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
-                                        <input type="email" class="form-control" name="email"
-                                             placeholder="Your Company's Name" required="">
+                                        {{Form::text('company', '', ['class'=>'form-control', 'placeholder'=>'Your Company\'s Name Here'])}}
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
-                                        <input type="email" class="form-control" name="email"
-                                             placeholder="Your Email Address" required="">
+                                        {{Form::text('email', '', ['class'=>'form-control', 'placeholder'=>'Your Email Address Here'])}}
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
-                                        <select class="form-control" id="sel1">
-                                             <option disabled selected>Your Project Type</option>
-                                             <option>2</option>
-                                             <option>3</option>
-                                             <option>4</option>
-                                        </select>
+                                        {{Form::select('type', ['L' => 'Interior Design', 'S' => 'Game Enivronment Design'], null, ['placeholder' => 'Your Project Type', 'class' => 'form-control', 'id'=>'sel1'])}}
                                    </div>
 
                                    <div class="col-md-12 col-sm-12 form-group">
-                                        <textarea class="form-control" rows="5" name="message" placeholder="Message"
-                                             required=""></textarea>
+                                        {{Form::textarea('message', '', ['class'=>'form-control', 'placeholder'=>'Your Message Here', 'rows'=>5])}}
                                    </div>
 
                                    <div class="col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6">
-                                        <button id="submit" type="submit" class="form-control form-btn"
-                                             name="submit">Send
-                                             Message</button>
+                                        {{Form::submit('Send Message', ['class'=>'form-control form-btn', 'id'=>'submit'])}}
                                    </div>
-                              </form>
+                                   @if (Session::has('flash_message'))
+                                        <div class="alert alert-success">{{ Session::get('flash_message') }}</div>
+                                   @endif 
+                              {{ Form::close() }}
                          </div>
                     </div>
 
