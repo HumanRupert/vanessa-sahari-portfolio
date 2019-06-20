@@ -11,33 +11,35 @@ class ContactFormController extends Controller
         public function store(Request $request)
     {
 
+                
         // Validate Form
         $this->validate($request, [
             'name' => 'required|max:50',
             'company' => 'required|max:50',
-            'subject' => 'required|max:50',
             'email' => 'required|email',
             'type' => 'required',
             'message' => 'required|max:2000',
         ]);
+
         
         // Create Email Content
-        $name = $request->input('message');
+        $name = $request->input('name');
         $company = $request->input('company');
-        $title = $request->input('title');
         $type = $request->input('type');
+        $email = $request->input('email');
         $message = $request->input('message');
-
-        // Send Email
-        \Mail::send('emails.HireMessage', [
+        $content = array(
             'company' => $company,
             'type' => $type,
-            'message' => $message
-        ], function ($mail) use ($request){
-            $mail->from($email, $name);
-            $mail->to(User::find(1))->subject($title);
-        });
+            'message' => $message,
+            'name' => $name,
+            'email' => $email
+        );
 
-        return redirect()->back()->with('flash_message', 'Thank you for your message!');
+        // Send Email
+        \Mail::to(User::find(1))->send(new HireMessage($content));
+
+
+        return redirect('home#hire')->with('flash_message', 'Thank you for your message!');
     }
 }
