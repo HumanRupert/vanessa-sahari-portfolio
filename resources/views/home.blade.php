@@ -309,14 +309,25 @@
                     <div class="col-md-7 col-xs-10">
                          <div class="wow fadeInUp" data-wow-delay="0.4s">
                               {{ Form::open(['action' => 'ContactFormController@store', 'method' => 'POST'], ['class'=>'form-control']) }}
+                                   {{ csrf_field() }}
                                    <div class="col-md-6 col-sm-6 form-group">
                                         {{Form::text('name', '', ['class'=>'form-control', 'placeholder'=>'Your Name Here'])}}
+                                        @if ($errors->has('name'))
+                                            <small class="alert alert-danger">{{$errors->first('name')}}</small>
+                                        @endif
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
                                         {{Form::text('company', '', ['class'=>'form-control', 'placeholder'=>'Your Company\'s Name Here'])}}
+                                        @if ($errors->has('company'))
+                                            <small class="alert alert-danger">{{$errors->first('company')}}</small>
+                                        @endif
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
                                         {{Form::text('email', '', ['class'=>'form-control', 'placeholder'=>'Your Email Address Here'])}}
+                                        @if ($errors->has('email'))
+                                            <small class="alert alert-danger">{{$errors->first('email')}}</small>
+                                        @endif
+
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
                                         {{Form::select('type', ['L' => 'Interior Design', 'S' => 'Game Enivronment Design'], null, ['placeholder' => 'Your Project Type', 'class' => 'form-control', 'id'=>'sel1'])}}
@@ -324,8 +335,10 @@
 
                                    <div class="col-md-12 col-sm-12 form-group">
                                         {{Form::textarea('message', '', ['class'=>'form-control', 'placeholder'=>'Your Message Here', 'rows'=>5])}}
+                                        @if ($errors->has('message'))
+                                            <small class="alert alert-danger">{{$errors->first('message')}}</small>
+                                        @endif
                                    </div>
-
                                    <div class="col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6">
                                         {{Form::submit('Send Message', ['class'=>'form-control form-btn', 'id'=>'submit'])}}
                                    </div>
