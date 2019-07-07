@@ -23,7 +23,6 @@
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/main.css">
 
 
 </head>
@@ -80,12 +79,8 @@
                     <div class="col-md-7 col-sm-12">
                          <div>
                               <h1 class="wow fadeInUp" data-wow-delay="0.4s">Hello, I am Vanessa.</h1>
-                              <p class="wow fadeInUp header-text" data-wow-delay="0.6s" style='color: white;'>Praesent
-                                   eleifend
-                                   tristique
-                                   nisl, nec finibus urna posuere nec. Quisque vel nunc eget arcu maximus facilisis
-                                   non
-                                   eu nisi. Aliquam ullamcorper est a nisl imperdiet luctus.</p>
+                              <p class="wow fadeInUp header-text" data-wow-delay="0.6s" style='color: white;'>I’m 17, from Germany and I mainly work as architectural visualization artist and game environment designer. I make 3D models and textures, and I put them together to make a photorealistic scene for your needs!
+                                  </p>
                               <a href="#contact-target"
                                    class="wow fadeInUp smoothScroll btn btn-default section-btn hire-btn"
                                    data-wow-delay="1s">Hire Me</a>
@@ -123,18 +118,13 @@
                               <!-- SECTION TITLE -->
                               <div class="wow fadeInUp about-title" data-wow-delay="0.6s">
                                    <h2>About Me</h2>
-                                   <p>Graphic Designer, Creative Photographer & Front-end Developer</p>
                               </div>
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <p>Praesent eleifend tristique nisl, nec finibus urna posuere nec. Quisque vel
-                                        nunc
-                                        eget arcu maximus facilisis non eu nisi. Aliquam ullamcorper est a nisl
-                                        imperdiet luctus.</p>
-                                   <p>Sed sed convallis odio. Nulla scelerisque libero efficitur diam fermentum,
-                                        quis
-                                        tincidunt urna placerat. Maecenas sed tortor sed nisi semper ultricies.
-                                        Nulla
-                                        ornare metus in massa mollis scelerisque.</p>
+                                   <p>I have started making 3D models at the age of 16, and now, I have over a year and a half experience in producing photorealistic 3D environments. I also have extensive knowledge of optimization, lighting, color theory, and making photorealistic textures.
+                                   </p>
+                                   <p>
+                                   I use Blender, Zbrush, Substance Painter, Substance Designer, Photoshop, and Unreal Engine4 in my workflow.
+                                   </p>
                               </div>
                          </div>
                     </div>
@@ -146,46 +136,42 @@
      <!-- SERVICE SECTION -->
      <section id="skills" class="skills-section">
           <div class="container">
-               <div class="row">
-
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+               <div class="row skills">
+                    <div class="wow fadeInUp section-title col-12" data-wow-delay="0.2s">
                          <!-- SECTION TITLE -->
                          <h2 class='col-xs-10'>My Skills</h2>
-                         <p class='col-xs-10'>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
                     </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.4s">
                          <div class="skill-thumb">
                               <i class="fa fa-cube"></i>
-                              <h4>3D Design</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing morbi venenatis.</p>
+                              <h4>High Poly/Low Poly Modeling</h4>
+                              <p>I can model anything that is in your mind with the highest quality and optimization</p>
                          </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.4s">
                          <div class="skill-thumb">
                               <i class="fa fa-gamepad"></i>
-                              <h4 class="white-color">Game Design</h4>
-                              <p>Duis sed arcu sed nunc maximus tempor. Maecenas et enim laoreet, pharetra risus
-                                   vel.
+                              <h4 class="white-color">Digital Sculpting</h4>
+                              <p>Using Zbrush, I can sculpt fine details such as wrinkles on objects like blankets, pillows, couches, towels, etc.
                               </p>
                          </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.6s">
                          <div class="skill-thumb">
                               <i class="fa fa-lightbulb-o"></i>
-                              <h4>UI/UX design</h4>
-                              <p>Sed tristique, nunc sit amet pellentesque pharetra, sapien urna.</p>
+                              <h4>Texturing</h4>
+                              <p>Using powerful texturing tools, I can give you custom, high quality, and realistic textures.
+                              </p>
                          </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.8s">
                          <div class="skill-thumb">
                               <i class="fa fa-clone"></i>
-                              <h4>Illustration</h4>
-                              <p>Cras ut urna quis nisi luctus molestie tincidunt sed ipsum. Donec gravida laoreet
-                                   erat.
+                              <h4>Rendering</h4>
+                              <p>Using Blender and the cycles render engine, I can render scenes with ray-tracing technology, which gives incredibly realistic looking results.
                               </p>
                          </div>
                     </div>
@@ -206,7 +192,7 @@
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                               <h2>My Projects</h2>
                               <div class="col-xs-12"></div>
-                              <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
+                              <p>Here you can see some of my projects!</p>
                          </div>
                     </div>
 
@@ -215,8 +201,8 @@
                          <div class="project-thumb">
                               <a href="/projects/1">
                                    <div class="project-thumb-overlay">
-                                        <h4 class="white-color">First Title</h4>
-                                        <h2>3D Design</h2>
+                                        <h4 class="white-color">Photorealistic Render</h4>
+                                        <h2>Interior</h2>
                                    </div>
                                    <img src="images/project-image1.jpg" class="img-responsive project" alt="project 1">
                               </a>
@@ -229,8 +215,8 @@
                               <a href="/projects/2">
 
                                    <div class="project-thumb-overlay">
-                                        <h4 class="white-color">First Title</h4>
-                                        <h2>3D Design</h2>
+                                        <h4 class="white-color">Photorealistic Render</h4>
+                                        <h2>Bathroom</h2>
                                    </div>
                                    <img src="images/project-image2.jpg" class="img-responsive project" alt="project 1">
                               </a>
@@ -241,8 +227,8 @@
                          <div class="project-thumb">
                               <a href="/projects/3">
                                    <div class="project-thumb-overlay">
-                                        <h4 class="white-color">First Title</h4>
-                                        <h2>3D Design</h2>
+                                        <h4 class="white-color">Photorealistic Render</h4>
+                                        <h2>Morning Kitchen</h2>
                                    </div>
                                    <img src="images/project-image3.jpg" class="img-responsive project" alt="project 1">
                               </a>
@@ -253,8 +239,8 @@
                          <div class="project-thumb">
                               <a href="/projects/4">
                                    <div class="project-thumb-overlay">
-                                        <h4 class="white-color">First Title</h4>
-                                        <h2>3D Design</h2>
+                                        <h4 class="white-color">Photorealistic Render</h4>
+                                        <h2>Bedroom</h2>
                                    </div>
                                    <img src="images/project-image4.jpg" class="img-responsive project" alt="project 1">
                               </a>
@@ -267,8 +253,8 @@
                          <div class="project-thumb">
                               <a href="/projects/5">
                                    <div class="project-thumb-overlay">
-                                        <h4 class="white-color">Title Two</h4>
-                                        <h2>3D Design</h2>
+                                        <h4 class="white-color">Photorealistic Render</h4>
+                                        <h2>Kitchen</h2>
                                    </div>
                                    <img src="images/project-image5.jpg" class="img-responsive project" alt="project 2">
                               </a>
@@ -280,8 +266,8 @@
                          <div class="project-thumb">
                               <a href="/projects/6">
                                    <div class="project-thumb-overlay">
-                                        <h4 class="white-color">Third Title</h4>
-                                        <h2>3D Design</h2>
+                                        <h4 class="white-color">Texture</h4>
+                                        <h2>Dirt Ground</h2>
                                    </div>
                                    <img src="images/project-image6.jpg" class="img-responsive project" alt="project 3">
                               </a>
@@ -303,7 +289,7 @@
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                               <h2>Hire Me</h2>
                               <div class="col-xs-12"></div>
-                              <p>Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.</p>
+                              <p>If you found my portfolio impressive, you may consider hiring me.</p>
                          </div>
                     </div>
                     <div class="col-md-7 col-xs-10">
@@ -330,7 +316,7 @@
 
                                    </div>
                                    <div class="col-md-6 col-sm-6 form-group">
-                                        {{Form::select('type', ['L' => 'Interior Design', 'S' => 'Game Enivronment Design'], null, ['placeholder' => 'Your Project Type', 'class' => 'form-control', 'id'=>'sel1'])}}
+                                        {{Form::select('type', ["Modeling" => 'Modeling', 'Photorealistic Rendering' => 'Photorealistic Rendering', 'Texturing' => 'Texturing'], null, ['placeholder' => 'Your Project Type', 'class' => 'form-control', 'id'=>'sel1'])}}
                                    </div>
 
                                    <div class="col-md-12 col-sm-12 form-group">
@@ -355,17 +341,12 @@
                          <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
                               <div class="section-title">
                                    <h2>Contact Info</h2>
-                                   <p>Lorem ipsum dolor sit consectetur adipiscing morbi venenatis et tortor
-                                        consectetur
-                                        adipisicing lacinia tortor morbi ultricies.</p>
+                                   <p>Please give me the information about the project as well as your contact info; I will answer to your request as soon as possible.</p>
                               </div>
 
-                              <p><i class="fa fa-map-marker contact-icon"></i> 456 New Street 22000, New York City, USA
+                              <p><i class="fa fa-comment contact-icon"></i> <a href="mailto:vanessa.sahari@gmail.com"
+                                        style='color: black;'>Vanessa.Sahari@Gmail.Com</a>
                               </p>
-                              <p><i class="fa fa-comment contact-icon"></i> <a href="mailto:info@company.com"
-                                        style='color: black;'>info@company.com</a>
-                              </p>
-                              <p><i class="fa fa-phone contact-icon"></i> 010-020-0340</p>
                          </div>
                     </div>
                </div>
@@ -378,27 +359,9 @@
      <footer>
           <div class="container">
                <div class="row footer-row wow fadeInUp">
-                    <div class="col-xs-3 footer-thumb">
-                         <h3>Lorem Ipsum</h3>
-                         <a href="#">Project #1</a>
-                         <a href="#">Project #1</a>
-                         <a href="#">Project #1</a>
-
-                    </div>
-                    <div class="col-xs-3 footer-thumb">
-                         <h3>Lorem Ipsum</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                              <span> praesentium voluptate quam facilis reiciendis vero? </span>
-                         </p>
-                    </div>
-                    <div class="col-xs-3 footer-thumb">
-                         <h3>Lorem Ipsum</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                              <span> praesentium voluptate quam facilis reiciendis vero? </span>
-                         </p>
-                    </div>
-
+                    <p><footer>&copy; Copyright 2019. All Rights Reserved. Designed and Developed By <a href="https://akhtariali.github.io/"><b>Ali Akhtari</b></a> for Vanessa Sahari</footer></p>
                </div>
+          </div>
      </footer>
 
      <!-- SCRIPTS -->

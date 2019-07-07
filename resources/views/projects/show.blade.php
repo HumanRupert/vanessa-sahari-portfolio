@@ -31,34 +31,28 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Interior Design</a>
+                        <a class="dropdown-item" href="#">Modern Bathroom</a>
+                        <a class="dropdown-item" href="#">Morning Kitchen</a>
+                        <a class="dropdown-item" href="#">Blue Lighting Bedroom</a>
+                        <a class="dropdown-item" href="#">Low Key Lighting Kitchen</a>
+                        <a class="dropdown-item" href="#">Dirt Ground Texture</a>
+
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Last Button</a>
                 </li>
             </ul>
             <div class="navbar-nav my-2 my-lg-0">
                 <li class="nav-item social-icon">
-                    <a class="fab fa-instagram" aria-hidden="true" href=""></a>
+                    <a class="fab fa-behance" aria-hidden="true" href=""></a>
                 </li>
                 <li class="nav-item social-icon">
-                    <a class="fab fa-facebook" aria-hidden="true" href=""></a>
-                </li>
-                <li class="nav-item social-icon">
-                    <a class="fab fa-telegram" aria-hidden="true" href=""></a>
+                    <a class="fab fa-artstation" aria-hidden="true" href=""></a>
                 </li>
                 <li class="nav-item social-icon">
                     <a class="fab fa-twitch" aria-hidden="true" href=""></a>
@@ -89,19 +83,24 @@
                         <p>Creative 3D Artist</p>
                     </div>
                 </div>
-                <div class="buttons d-flex justify-content-center mt-lg-3">
-                    <a href="" class="btn btn-primary btn-sm mr-3"> <i class="fa fa-save mr-1"></i> Download</a>
-                    <a href="" class="btn btn-primary btn-sm"> <i class="fa fa-share mr-1"></i>Share</a>
+                <div class="buttons d-flex justify-content-center flex-wrap mt-lg-3">
+                    <b>Used Stack:</b>
+                    <div class="col-12"></div>
+                    <img src="../images/zbrush.png" class="stack">
+                    <img src="../images/substance.png" class="stack">
+                    <img src="../images/blender.png" class="stack">
+                    <img src="../images/substance (2).png" class="stack">
+                    <img src="../images/ps.png" class="stack">
                 </div>
                 <hr class="mt-4 mb-3">
                 <div class="project-details text-center">
                     <h3>{{$project->title}}</h3>
                     <p>{{$project->details}}</p>
                     <h3 class="mb-3">Also see in:</h3>
-                    <a class="fa fa-vr-cardboard" href=""> </a>
-                    <a class="fa fa-basketball-ball" href=""></a>
-                    <a class="fab fa-codepen" href=""></a>
+                    <a class="fab fa-behance" href=""> </a>
                     <a class="fab fa-artstation" href=""></a>
+                    <a class="fab fa-dribbble" href=""></a>
+
                 </div>
             </div>
 
