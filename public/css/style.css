@@ -100,13 +100,22 @@ p {
 .form-btn {
     background-color: #fe5bac;
     color: white;
-    transition: 0.3s;
-    border: 0;
+    transition: 0s !important;
+    border: 0 !important;
+    box-shadow: 0px 5px #a82768 !important;
+    position: relative;
 }
 
 .form-btn:hover {
-    background-color: rgb(253, 115, 184);
+    box-shadow: 0px 3px #a82768 !important;
+    top: 2px;
 }
+
+.form-btn:active {
+    box-shadow: 0px 0px !important;
+    top: 5px;
+}
+
 
 /*---------------------------------------
   General               
@@ -246,6 +255,12 @@ footer {
 .hire-btn {
     font-weight: bold;
     font-size: 15px;
+    box-shadow: 0px 10px 15px #a827687c;
+}
+
+.hire-btn:hover {
+    box-shadow: 0px 10px 15px #fe5bac7a !important;
+
 }
 
 .fa-chevron-down:before {
@@ -301,6 +316,7 @@ footer {
     align-items: flex-end;
     justify-content: flex-start;
     position: fixed;
+    transition-duration: .5s;
 }
 
 .navigation a {
@@ -425,18 +441,8 @@ footer {
 /*---------------------------------------
   Skills section              
 -----------------------------------------*/
-.skills {
-    display: table;
-    height: 100%;
-}
-
-.single-skill {
-    height: 80%;
-    display: table-cell;
-}
 
 .skill-thumb {
-    height: 100%;
     background: #ffffff;
     border-radius: 5px;
     padding: 42px 22px;
@@ -649,6 +655,21 @@ footer p {
 /*---------------------------------------
   Mobile Responsive styles              
 -----------------------------------------*/
+@media (min-width: 992px) {
+    .skills {
+        display: table;
+        height: 100%;
+    }
+
+    .single-skill {
+        height: 80%;
+        display: table-cell;
+    }
+
+    .skill-thumb {
+        height: 100%;
+    }
+}
 
 @media (max-width: 980px) {
     .skill-thumb {
@@ -744,6 +765,11 @@ footer p {
         height: 350px;
     }
 
+    .section-title {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 580px) {
@@ -829,6 +855,14 @@ footer p {
 @media (max-width: 450px) {
     .nav-scrolled .get-in-touch {
         display: none !important;
+    }
+
+    .project-thumb h4 {
+        font-size: 15px;
+    }
+
+    .project-thumb h2 {
+        font-size: 18px;
     }
 
 }

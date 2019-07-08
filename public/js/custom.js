@@ -33,14 +33,28 @@
 
 
     // navigation Section
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll > 80) {
-            $(".navigation").addClass('nav-scrolled');
-        } else {
+    // window.onscroll = function () {
+    //     scrollFunction()
+    // };
+
+    // function scrollFunction() {
+    //     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    //         $(".navigation").addClass('nav-scrolled');
+    //         console.log('hello');
+    //     } else {
+    //         $(".navigation").removeClass('nav-scrolled');
+    //     }
+    // }
+
+    var $win = $(window);
+
+    $win.scroll(function () {
+        if ($win.scrollTop() == 0)
             $(".navigation").removeClass('nav-scrolled');
+        else {
+            $(".navigation").addClass('nav-scrolled');
         }
-    })
+    });
 
 
     // Parallax Js
@@ -64,7 +78,6 @@
             event.preventDefault();
         });
     });
-
 
     // WOW Animation js
     new WOW({

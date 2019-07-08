@@ -20,11 +20,6 @@ class ContactFormController extends Controller
             'type' => 'required',
             'message' => 'required|max:2000',
         ]);
-
-        if(count($errors) > 0){
-            return 'hello';
-        }
-
         
         // Create Email Content
         $name = $request->input('name');
