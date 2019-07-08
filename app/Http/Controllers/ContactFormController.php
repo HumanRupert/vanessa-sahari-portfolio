@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Mail\HireMessage;
 use App\User;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 class ContactFormController extends Controller
@@ -13,13 +14,20 @@ class ContactFormController extends Controller
 
                 
         // Validate Form
-        $this->validate($request, [
+        $validator = Validator::make($request->all(), [
             'name' => 'required|max:50',
             'company' => 'required|max:50',
             'email' => 'required|email',
             'type' => 'required',
             'message' => 'required|max:2000',
         ]);
+
+        if ($validator->fails()) {
+            return redirect('home#hire')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
         
         // Create Email Content
         $name = $request->input('name');

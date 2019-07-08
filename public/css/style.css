@@ -116,6 +116,18 @@ p {
     top: 5px;
 }
 
+.hire-btn {
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 10px 15px #a827687c;
+}
+
+.hire-btn:hover {
+    box-shadow: 0px 10px 15px #fe5bac7a !important;
+
+}
+
+
 
 /*---------------------------------------
   General               
@@ -250,17 +262,6 @@ footer {
 .home-thumb {
     display: flex;
     justify-content: center;
-}
-
-.hire-btn {
-    font-weight: bold;
-    font-size: 15px;
-    box-shadow: 0px 10px 15px #a827687c;
-}
-
-.hire-btn:hover {
-    box-shadow: 0px 10px 15px #fe5bac7a !important;
-
 }
 
 .fa-chevron-down:before {
@@ -620,6 +621,10 @@ hr {
     height: 0.7px;
     background: #a3ffa3;
     display: none;
+}
+
+.alert {
+    padding: 6px;
 }
 
 /*---------------------------------------
