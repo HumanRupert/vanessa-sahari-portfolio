@@ -19,7 +19,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar-expand-lg navbar-light navbar">
-        <a class="navbar-brand col-6 col-md-4 col-lg-2" href="#"><img src="../images/Untitled-1.png" alt=""
+        <a class="navbar-brand col-6 col-md-4 col-lg-2" href="/home"><img src="../images/Untitled-1.png" alt=""
                 class="img-responsive img-fluid logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</span></a>
+                    <a class="nav-link" href="/home">Home</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

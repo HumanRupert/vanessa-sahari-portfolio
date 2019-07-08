@@ -48,6 +48,12 @@ body {
     margin-left: 0;
 }
 
+@media(min-width: 576px) and (max-width: 768px) {
+    .logo {
+        width: 40%;
+    }
+}
+
 .navbar {
     background-color: #f3a9ce !important;
 }

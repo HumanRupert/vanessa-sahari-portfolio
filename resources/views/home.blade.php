@@ -113,7 +113,7 @@
                          </div>
                     </div>
 
-                    <div class="col-md-8 col-xs-10">
+                    <div class="col-md-8 col-xs-10 col-sm-6">
                          <div class="about-thumb">
                               <!-- SECTION TITLE -->
                               <div class="wow fadeInUp about-title" data-wow-delay="0.6s">
@@ -139,9 +139,9 @@
                <div class="row skills">
                     <div class="wow fadeInUp section-title col-12" data-wow-delay="0.2s">
                          <!-- SECTION TITLE -->
-                         <h2 class='col-xs-10'>My Skills</h2>
+                         <h2 class='col-xs-10 col-sm-6'>My Skills</h2>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.4s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.4s">
                          <div class="skill-thumb">
                               <i class="fa fa-cube"></i>
                               <h4>High Poly/Low Poly Modeling</h4>
@@ -149,7 +149,7 @@
                          </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.4s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.4s">
                          <div class="skill-thumb">
                               <i class="fa fa-gamepad"></i>
                               <h4 class="white-color">Digital Sculpting</h4>
@@ -158,7 +158,7 @@
                          </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.6s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.6s">
                          <div class="skill-thumb">
                               <i class="fa fa-lightbulb-o"></i>
                               <h4>Texturing</h4>
@@ -167,7 +167,7 @@
                          </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-10 wow fadeInUp single-skill" data-wow-delay="0.8s">
+                    <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.8s">
                          <div class="skill-thumb">
                               <i class="fa fa-clone"></i>
                               <h4>Rendering</h4>
@@ -196,7 +196,7 @@
                          </div>
                     </div>
 
-                    <div class="wow fadeInUp col-md-4 col-xs-6" data-wow-delay="0.4s">
+                    <div class="wow fadeInUp col-md-4 col-sm-6 col-xs-10" data-wow-delay="0.4s">
                          <!-- project THUMB -->
                          <div class="project-thumb">
                               <a href="/projects/1">
@@ -205,10 +205,14 @@
                                         <h2>Interior</h2>
                                    </div>
                                    <img src="images/project-image1.jpg" class="img-responsive project" alt="project 1">
+                                   <div class="project-thumb-text">
+                                        <h4>Photorealistic Render</h4>
+                                        <h2>Interior</h2>
+                                   </div>
                               </a>
                          </div>
                     </div>
-                    <div class="wow fadeInUp col-md-4 col-xs-6" data-wow-delay="0.4s">
+                    <div class="wow fadeInUp col-md-4 col-xs-10 col-sm-6" data-wow-delay="0.4s">
                          <!-- project THUMB -->
                          <div class="project-thumb">
                               <!-- <a href="images/project-image2.jpg" class="image-popup"> -->
@@ -219,10 +223,15 @@
                                         <h2>Bathroom</h2>
                                    </div>
                                    <img src="images/project-image2.jpg" class="img-responsive project" alt="project 1">
+                                   <div class="project-thumb-text">
+                                        <h4>Photorealistic Render</h4>
+                                        <h2>Bathroom</h2>
+                                   </div>
+
                               </a>
                          </div>
                     </div>
-                    <div class="wow fadeInUp col-md-4 col-xs-6" data-wow-delay="0.4s">
+                    <div class="wow fadeInUp col-md-4 col-xs-10 col-sm-6" data-wow-delay="0.4s">
                          <!-- project THUMB -->
                          <div class="project-thumb">
                               <a href="/projects/3">
@@ -231,10 +240,15 @@
                                         <h2>Morning Kitchen</h2>
                                    </div>
                                    <img src="images/project-image3.jpg" class="img-responsive project" alt="project 1">
+                                   <div class="project-thumb-text">
+                                        <h4>Photorealistic Render</h4>
+                                        <h2>Morning Kitchen</h2>
+                                   </div>
+
                               </a>
                          </div>
                     </div>
-                    <div class="wow fadeInUp col-md-4 col-xs-6" data-wow-delay="0.4s">
+                    <div class="wow fadeInUp col-md-4 col-xs-10 col-sm-6" data-wow-delay="0.4s">
                          <!-- project THUMB -->
                          <div class="project-thumb">
                               <a href="/projects/4">
@@ -243,12 +257,17 @@
                                         <h2>Bedroom</h2>
                                    </div>
                                    <img src="images/project-image4.jpg" class="img-responsive project" alt="project 1">
+                                   <div class="project-thumb-text">
+                                        <h4>Photorealistic Render</h4>
+                                        <h2>Bedroom</h2>
+                                   </div>
+
                               </a>
                          </div>
                     </div>
 
 
-                    <div class="wow fadeInUp col-md-4 col-xs-6" data-wow-delay="0.4s">
+                    <div class="wow fadeInUp col-md-4 col-xs-10 col-sm-6" data-wow-delay="0.4s">
                          <!-- project THUMB -->
                          <div class="project-thumb">
                               <a href="/projects/5">
@@ -257,11 +276,16 @@
                                         <h2>Kitchen</h2>
                                    </div>
                                    <img src="images/project-image5.jpg" class="img-responsive project" alt="project 2">
+                                   <div class="project-thumb-text">
+                                        <h4>Photorealistic Render</h4>
+                                        <h2>Kitchen</h2>
+                                   </div>
+
                               </a>
                          </div>
                     </div>
 
-                    <div class="wow fadeInUp col-md-4 col-xs-6" data-wow-delay="0.4s">
+                    <div class="wow fadeInUp col-md-4 col-xs-10 col-sm-6" data-wow-delay="0.4s">
                          <!-- project THUMB -->
                          <div class="project-thumb">
                               <a href="/projects/6">
@@ -270,6 +294,11 @@
                                         <h2>Dirt Ground</h2>
                                    </div>
                                    <img src="images/project-image6.jpg" class="img-responsive project" alt="project 3">
+                                   <div class="project-thumb-text">
+                                        <h4>Texture</h4>
+                                        <h2>Dirt Ground</h2>
+                                   </div>
+
                               </a>
                          </div>
                     </div>
@@ -292,7 +321,7 @@
                               <p>If you found my portfolio impressive, you may consider hiring me.</p>
                          </div>
                     </div>
-                    <div class="col-md-7 col-xs-10">
+                    <div class="col-md-7 col-xs-10 col-sm-6">
                          <div class="wow fadeInUp" data-wow-delay="0.4s">
                               {{ Form::open(['action' => 'ContactFormController@store', 'method' => 'POST'], ['class'=>'form-control']) }}
                                    {{ csrf_field() }}
@@ -335,7 +364,7 @@
                          </div>
                     </div>
 
-                    <div class="col-md-5 col-xs-10">
+                    <div class="col-md-5 col-xs-10 col-sm-6">
                          <!-- CONTACT INFO -->
                          <hr>
                          <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
