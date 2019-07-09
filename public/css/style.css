@@ -907,3 +907,17 @@ footer p {
     }
 
 }
+
+@media (max-width: 400px) {
+    .navbar-nav li a {
+        font-size: 12px;
+    }
+
+    .nav-scrolled .navbar-nav {
+        margin-left: -100px;
+    }
+
+    .skill-thumb {
+        padding-top: 20px;
+    }
+}
