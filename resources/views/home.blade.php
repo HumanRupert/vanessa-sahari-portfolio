@@ -11,7 +11,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
      <title>Vanessa Sahari - Creative 3D Artist</title>
-     <link rel="icon" href="./images/logo.png" type="image/gif" sizes="16x16">
+     <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
 
 
 
@@ -19,7 +19,8 @@
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
      <link rel="stylesheet" href="css/animate.css">
      <link rel="stylesheet" href="css/magnific-popup.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://kit.fontawesome.com/b9d8e9307e.js'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+    <script src="https://kit.fontawesome.com/b9d8e9307e.js"></script>
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/style.css">
@@ -38,7 +39,7 @@
 
      <!-- NAVBAR SECTION -->
      <div class="navigation">
-          <a href="">
+          <a href="/home">
                <img src="images/Untitled-1.png" alt="" id='logo'>
           </a>
           <nav id="scrollspy">
@@ -63,10 +64,18 @@
                </ul>
           </nav>
           <ul class="social-icon">
-               <li><a href="#" class="fa fa-facebook"></a></li>
-               <li><a href="#" class="fa fa-twitter"></a></li>
-               <li><a href="#" class="fa fa-instagram"></a></li>
-               <li><a href="#" class="fa fa-behance"></a></li>
+                <li>
+                    <a class="fab fa-behance" href=""></a>
+                </li>
+                <li>
+                    <a class="fab fa-artstation" href="https://www.artstation.com/iamnessa"></a>
+                </li>
+                <li>
+                    <a class="fab fa-twitch" href=""></a>
+                </li>
+               <li>
+                    <a href="https://www.linkedin.com/in/sepehr-sahari-16388a172/" class="fab fa-linkedin"></a>
+               </li>
           </ul>
      </div>
 
@@ -104,10 +113,18 @@
                               <img src="images/profile-image.jpg" class="wow fadeInUp img-responsive"
                                    data-wow-delay="0.2s" alt="about image">
                               <ul class="mini-social-icon col-xs-12" style='display: none;'>
-                                   <li><a href="#" class="fa fa-facebook"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
-                                   <li><a href="#" class="fa fa-behance"></a></li>
+                                   <li>
+                                        <a class="fab fa-behance" href=""></a>
+                                   </li>
+                                   <li>
+                                        <a class="fab fa-artstation" href="https://www.artstation.com/iamnessa"></a>
+                                   </li>
+                                   <li>
+                                        <a class="fab fa-twitch" href=""></a>
+                                   </li>
+                                   <li>
+                                        <a href="https://www.linkedin.com/in/sepehr-sahari-16388a172/" class="fab fa-linkedin"></a>
+                                   </li>
                               </ul>
 
                          </div>
@@ -137,7 +154,7 @@
      <section id="skills" class="skills-section">
           <div class="container">
                <div class="row skills">
-                    <div class="wow fadeInUp section-title col-12" data-wow-delay="0.2s">
+                    <div class="wow fadeInUp section-title col-xs-12" data-wow-delay="0.2s">
                          <!-- SECTION TITLE -->
                          <h2 class='col-xs-10 col-sm-6'>My Skills</h2>
                     </div>
@@ -151,7 +168,7 @@
 
                     <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.4s">
                          <div class="skill-thumb">
-                              <i class="fa fa-gamepad"></i>
+                              <i class="fa fas fa-pencil-ruler"></i>
                               <h4 class="white-color">Digital Sculpting</h4>
                               <p>Using Zbrush, I can sculpt fine details such as wrinkles on objects like blankets, pillows, couches, towels, etc.
                               </p>
@@ -160,7 +177,7 @@
 
                     <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.6s">
                          <div class="skill-thumb">
-                              <i class="fa fa-lightbulb-o"></i>
+                              <i class="fa fas fa-fingerprint"></i>
                               <h4>Texturing</h4>
                               <p>Using powerful texturing tools, I can give you custom, high quality, and realistic textures.
                               </p>
@@ -169,7 +186,7 @@
 
                     <div class="col-md-3 col-sm-6 col-xs-10 col-sm-6 wow fadeInUp single-skill" data-wow-delay="0.8s">
                          <div class="skill-thumb">
-                              <i class="fa fa-clone"></i>
+                              <i class="fa fas fa-vector-square"></i>
                               <h4>Rendering</h4>
                               <p>Using Blender and the cycles render engine, I can render scenes with ray-tracing technology, which gives incredibly realistic looking results.
                               </p>

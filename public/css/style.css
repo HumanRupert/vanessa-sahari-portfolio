@@ -777,15 +777,16 @@ footer p {
         align-items: center;
     }
 
-}
-
-@media (max-width: 700px) {
     #logo {
         margin-left: 40px;
         height: 30%;
         margin-right: 10px;
     }
 
+
+}
+
+@media (max-width: 700px) {
     .nav-scrolled .navbar-nav {
         margin-left: -130px;
     }

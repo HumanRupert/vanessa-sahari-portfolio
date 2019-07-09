@@ -37,12 +37,12 @@
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Interior Design</a>
-                        <a class="dropdown-item" href="#">Modern Bathroom</a>
-                        <a class="dropdown-item" href="#">Morning Kitchen</a>
-                        <a class="dropdown-item" href="#">Blue Lighting Bedroom</a>
-                        <a class="dropdown-item" href="#">Low Key Lighting Kitchen</a>
-                        <a class="dropdown-item" href="#">Dirt Ground Texture</a>
+                        <a class="dropdown-item" href="/projects/1">Interior Design</a>
+                        <a class="dropdown-item" href="/projects/2">Modern Bathroom</a>
+                        <a class="dropdown-item" href="/projects/3">Morning Kitchen</a>
+                        <a class="dropdown-item" href="/projects/4">Low Key Lighting Kitchen</a>
+                        <a class="dropdown-item" href="/projects/5">Blue Lighting Bedroom</a>
+                        <a class="dropdown-item" href="/projects/6">Dirt Ground Texture</a>
 
                     </div>
                 </li>
@@ -52,7 +52,7 @@
                     <a class="fab fa-behance" aria-hidden="true" href=""></a>
                 </li>
                 <li class="nav-item social-icon">
-                    <a class="fab fa-artstation" aria-hidden="true" href=""></a>
+                    <a class="fab fa-artstation" aria-hidden="true" href="https://www.artstation.com/iamnessa"></a>
                 </li>
                 <li class="nav-item social-icon">
                     <a class="fab fa-twitch" aria-hidden="true" href=""></a>
