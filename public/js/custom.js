@@ -11,7 +11,7 @@
 
     // PRE LOADER
     $(window).load(function () {
-        $('.preloader').fadeOut(800); // set duration in brackets    
+        $('.preloader').fadeOut(200); // set duration in brackets    
     });
 
     // SCROLLSPY

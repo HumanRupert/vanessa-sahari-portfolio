@@ -39,7 +39,7 @@
      <!-- NAVBAR SECTION -->
      <div class="navigation">
           <a href="">
-               <img src="../images/untitled-1.png" alt="" id='logo'>
+               <img src="images/Untitled-1.png" alt="" id='logo'>
           </a>
           <nav id="scrollspy">
                <ul class="navbar-nav">
